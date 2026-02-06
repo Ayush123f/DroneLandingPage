@@ -212,9 +212,6 @@ section {
    PRODUCT SHOWCASE
 ========================== */
 
-/* ==========================
-   PRODUCT SHOWCASE (MODERN)
-========================== */
 
 .drone-hero {
   padding: 90px 20px 80px;
@@ -278,6 +275,13 @@ section {
   border: 1px solid transparent;
   transition: 0.25s ease;
 }
+
+.drone-thumb.active {
+  outline: 2px solid #3b82f6;
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.6);
+  transform: scale(1.05);
+}
+
 
 /* Hover */
 .drone-thumb:hover {

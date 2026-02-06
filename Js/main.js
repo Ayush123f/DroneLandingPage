@@ -67,3 +67,34 @@ const testimonialSlider = new Swiper(".testimonial-slider", {
     992: { slidesPerView: 3 },
   },
 });
+
+if (document.querySelector(".trending-slider")) {
+  new Swiper(".trending-slider", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    grabCursor: true,
+
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+
+    navigation: {
+      nextEl: ".trending-next",
+      prevEl: ".trending-prev",
+    },
+
+    pagination: {
+      el: ".trending-pagination",
+      clickable: true,
+    },
+
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      576: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      1200: { slidesPerView: 4 },
+    },
+  });
+}

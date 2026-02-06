@@ -188,112 +188,116 @@
 
 </section>
 
-<!-- ================= PRODUCT SLIDER ================= -->
-<section class="product-showcase py-5">
+<!-- ================= PRODUCT SHOWCASE ================= -->
+<section class="drone-hero" id="droneHero">
+
   <div class="container">
 
-    <div class="showcase-main text-center mb-4">
-      <img src="images/drone4.png" class="img-fluid mb-3">
-      <h4>DJI Mavic Pro</h4>
-      <p>4K Camera • 30 Min Flight • Pro Stabilization</p>
-      <button class="btn btn-primary">Buy Now</button>
+    <!-- Main Drone -->
+    <div class="drone-display">
+      <img
+        id="mainDroneImage"
+        src="images/drone1.png"
+        alt="DJI Mavic Pro"
+      />
     </div>
 
-    <div class="showcase-thumbs d-flex justify-content-center gap-3">
-      <img src="images/droneee.png">
-      <img src="images/drone5.png">
-      <img src="images/drone6.png">
-      <img src="images/drone3.png">
+    <!-- Info -->
+    <h2 id="droneTitle">DJI Mavic Pro</h2>
+    <p id="droneSpecs">4K Camera • 30 Min Flight • Pro Stabilization</p>
+
+    <!-- Thumbnails -->
+    <div class="drone-thumbs">
+      <img
+        class="drone-thumb active"
+        src="images/drone1.png"
+        data-large="images/drone1-large.png"
+        data-title="DJI Mavic Pro"
+        data-specs="4K Camera • 30 Min Flight • Pro Stabilization"
+        alt="DJI Mavic Pro"
+      />
+
+      <img
+        class="drone-thumb"
+        src="images/drone2.png"
+        data-large="images/drone2-large.png"
+        data-title="DJI Air 2S"
+        data-specs="5.4K Video • 31 Min Flight"
+        alt="DJI Air 2S"
+      />
     </div>
 
   </div>
+
 </section>
 
- <!-- ================= TRENDING DRONES SLIDER ================= -->
-  
-<section class="trending py-5">
 
+<!-- Trending Section -->
+
+<section class="trending py-5">
   <div class="container">
 
-    <!-- Section Title -->
     <div class="text-center mb-5">
       <h2 class="section-title">Trending Drones</h2>
       <p class="fw-light">Top selling drones this month</p>
     </div>
 
-    <!-- Swiper Slider -->
     <div class="swiper trending-slider">
 
       <div class="swiper-wrapper">
 
-        <!-- Slide 1 -->
         <div class="swiper-slide">
           <div class="trend-card">
-            <img src="images/drone1.png" loading="lazy" alt="Mavic Air 2 Drone" class="img-fluid">
-            <h6 class="drone-name">Mavic Air 2</h6>
-            <p class="drone-price">$899</p>
+            <img src="images/drone1.png" alt="Mavic Air 2">
+            <h6>Mavic Air 2</h6>
+            <span>$899</span>
           </div>
         </div>
 
-        <!-- Slide 2 -->
-        <div class="swiper-slide">
+          <div class="swiper-slide">
           <div class="trend-card">
-            <img src="images/drone2.png" loading="lazy" alt="Phantom 4 Pro Drone" class="img-fluid">
-            <h6 class="drone-name">Phantom 4 Pro</h6>
-            <p class="drone-price">$1299</p>
+            <img src="images/drone1.png" alt="Mavic Air 2">
+            <h6>Mavic Air 2</h6>
+            <span>$899</span>
           </div>
         </div>
 
-        <!-- Slide 3 -->
-        <div class="swiper-slide">
+          <div class="swiper-slide">
           <div class="trend-card">
-            <img src="images/drone3.png" loading="lazy" alt="Inspire 2 Drone" class="img-fluid">
-            <h6 class="drone-name">Inspire 2</h6>
-            <p class="drone-price">$1999</p>
+            <img src="images/drone1.png" alt="Mavic Air 2">
+            <h6>Mavic Air 2</h6>
+            <span>$899</span>
           </div>
         </div>
 
-        <!-- Slide 4 -->
-        <div class="swiper-slide">
+          <div class="swiper-slide">
           <div class="trend-card">
-            <img src="images/drone4.png" loading="lazy" alt="Mavic Mini Drone" class="img-fluid">
-            <h6 class="drone-name">Mavic Mini</h6>
-            <p class="drone-price">$499</p>
+            <img src="images/drone1.png" alt="Mavic Air 2">
+            <h6>Mavic Air 2</h6>
+            <span>$899</span>
           </div>
         </div>
 
-        <!-- Slide 5 -->
-        <div class="swiper-slide">
+          <div class="swiper-slide">
           <div class="trend-card">
-            <img src="images/drone1.png" loading="lazy" alt="Mavic Air 2 Drone" class="img-fluid">
-            <h6 class="drone-name">Mavic Air 2</h6>
-            <p class="drone-price">$899</p>
+            <img src="images/drone1.png" alt="Mavic Air 2">
+            <h6>Mavic Air 2</h6>
+            <span>$899</span>
           </div>
         </div>
 
-        <!-- Slide 6 -->
-        <div class="swiper-slide">
-          <div class="trend-card">
-            <img src="images/drone1.png" loading="lazy" alt="Mavic Air 2 Drone" class="img-fluid">
-            <h6 class="drone-name">Mavic Air 2</h6>
-            <p class="drone-price">$899</p>
-          </div>
-        </div>
 
+        <!-- repeat slides -->
       </div>
 
-      <!-- Navigation Buttons -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-
-      <!-- Pagination -->
-      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev trending-prev"></div>
+      <div class="swiper-button-next trending-next"></div>
+      <div class="swiper-pagination trending-pagination"></div>
 
     </div>
-
   </div>
-
 </section>
+
 
 
 <!-- Mission Section -->

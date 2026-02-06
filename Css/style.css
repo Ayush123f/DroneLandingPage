@@ -212,105 +212,163 @@ section {
    PRODUCT SHOWCASE
 ========================== */
 
-.product-showcase {
-  background: rgba(255,255,255,0.02);
-}
-
-.showcase-main {
-  background: linear-gradient(135deg,#0a1a2f,#040c16);
-  padding: 40px;
-  border-radius: 20px;
-}
-
-.showcase-thumbs img {
-  width: 80px;
-  border-radius: 10px;
-  cursor: pointer;
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-.showcase-thumbs img:hover {
-  opacity: 1;
-  transform: scale(1.05);
-}
 /* ==========================
-   TRENDING DRONES (IMPROVED)
+   PRODUCT SHOWCASE (MODERN)
+========================== */
+
+.drone-hero {
+  padding: 90px 20px 80px;
+  text-align: center;
+  background: radial-gradient(circle at top, #020617, #01040b);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Main Drone Container */
+.drone-display {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Main Drone Image */
+#mainDroneImage {
+  max-width: 460px;
+  width: 100%;
+  transition: opacity 0.3s ease, transform 0.45s ease;
+  filter: drop-shadow(0 40px 80px rgba(0, 140, 255, 0.35));
+}
+
+/* Floating effect */
+.drone-display:hover #mainDroneImage {
+  transform: translateY(-10px);
+}
+
+/* Title */
+#droneTitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* Specs */
+#droneSpecs {
+  font-size: 1rem;
+  color: #94a3b8;
+  margin-bottom: 35px;
+}
+
+/* Thumbnails wrapper */
+.drone-thumbs {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* Thumbnail */
+.drone-thumb {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  padding: 8px;
+  border-radius: 14px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid transparent;
+  transition: 0.25s ease;
+}
+
+/* Hover */
+.drone-thumb:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Active Thumb */
+.drone-thumb.active {
+  border-color: #4da3ff;
+  box-shadow: 0 0 0 2px rgba(77, 163, 255, 0.35);
+}
+
+
+/* ==========================
+   TRENDING DRONES (PREMIUM)
 ========================== */
 
 .trending {
-  background: linear-gradient(180deg, #020617, #020b16);
+  background: radial-gradient(circle at top, #020617, #01040b);
   color: #fff;
 }
 
 /* Slider spacing */
 .trending-slider {
-  padding: 40px 0 60px;
+  padding: 30px 10px 60px;
 }
 
-/* Slide base */
+/* Slide card */
 .trend-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 22px 18px;
   text-align: center;
-  padding: 20px 10px;
-  transition: all 0.45s ease;
-
-  transform: scale(0.82);
-  opacity: 0.4;
+  height: 100%;
+  transition: all 0.35s ease;
 }
 
-/* Active slide */
-.swiper-slide-active .trend-card {
-  transform: scale(1);
-  opacity: 1;
+/* Hover effect (not scale) */
+.trend-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(77, 163, 255, 0.5);
+  box-shadow: 0 18px 45px rgba(0, 140, 255, 0.25);
 }
 
 /* Drone image */
 .trend-card img {
-  max-width: 180px;
-  margin: 0 auto 20px;
-  transition: transform 0.4s ease;
+  width: 100%;
+  max-width: 160px;
+  height: 120px;
+  object-fit: contain;
+  margin: 0 auto 18px;
 }
 
-/* Float active image */
-.swiper-slide-active img {
-  transform: translateY(-8px);
-}
-
-/* Drone name */
-.drone-name {
-  font-size: 1.05rem;
+/* Name */
+.trend-card h6 {
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 4px;
 }
 
 /* Price */
-.drone-price {
-  font-size: 1rem;
+.trend-card span {
+  font-size: 0.95rem;
   color: #4da3ff;
 }
 
-/* Navigation arrows */
-.swiper-button-next,
-.swiper-button-prev {
+/* Navigation */
+.trending-prev,
+.trending-next {
   color: #4da3ff;
-  opacity: 0.6;
+  opacity: 0.7;
   transition: 0.3s;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
+.trending-prev:hover,
+.trending-next:hover {
   opacity: 1;
 }
 
 /* Pagination */
-.swiper-pagination-bullet {
+.trending-pagination .swiper-pagination-bullet {
   background: #4da3ff;
   opacity: 0.3;
 }
 
-.swiper-pagination-bullet-active {
+.trending-pagination .swiper-pagination-bullet-active {
   opacity: 1;
 }
+
 
 
 /* ===== Responsive ===== */
